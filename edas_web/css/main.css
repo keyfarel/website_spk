@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    --primary: #84a98c;
+    --primary-light: #cad2c5;
+    --background: #f5f7f6;
+    --text: #2f3e46;
+    --border: #d1d5db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    padding: 20px;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.9rem;
+    /* lebih kecil dari sebelumnya */
+    margin: 0 auto 2rem;
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.6rem;
+    /* lebih sempit */
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-light);
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    background-color: #fff;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0.5rem 0.25rem;
+}
+
+button:hover {
+    background-color: var(--primary-light);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 0.85rem;
+        display: block;
+        overflow-x: auto;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
